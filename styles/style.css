@@ -1,5 +1,5 @@
 * {
-
+  outline: 1px solid red;
   margin: 0;
   padding: 0;
 }
@@ -173,8 +173,51 @@
   font-weight: normal;
 }
 
+.feynman {
+  height: 890px;
+  background-color: #f2f2f2;
+  position: relative;
+}
 
+.feynman__title {
+  width: 648px;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin: auto;
+  padding-top: 100px;
+}
 
+.feynman__subtitle {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin-top: 60px;
+}
+
+.feynman__link {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  right: 48px;
+}
+
+.feynman__main-illusrartion {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 867px;
+  height: 637px;
+}
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {

@@ -1,13 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-}
 
-h1, h2 , h3, h4, p, {
+h1, h2 , h3, h4, p, ul {
   margin: 0;
   padding: 0;
 }
-/* не уверен, что это нужно, если мы уже скинули через звезду */
 
 .page {
   min-width: 1100px;
@@ -57,6 +52,7 @@ h1, h2 , h3, h4, p, {
 
 .header__link {
   text-decoration: none;
+  color: #2f80ed;
 }
 
 .header__main-illustration {
@@ -128,7 +124,6 @@ h1, h2 , h3, h4, p, {
 
 .section-title {
   width: 60%;
-  /*padding-top: 100px; главный бриф и брифы отдельно взятых блоков тут противоречят друг другу*/
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
@@ -152,7 +147,8 @@ h1, h2 , h3, h4, p, {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 60px auto 100px;
+  margin: 0 auto 100px;
+  list-style: none;
 }
 
 .table__cell {
@@ -174,7 +170,7 @@ h1, h2 , h3, h4, p, {
 }
 
 .feynman {
-  height: 890px;
+  min-height: 890px;
   background-color: #f2f2f2;
   position: relative;
 }
@@ -209,6 +205,7 @@ h1, h2 , h3, h4, p, {
   position: absolute;
   top: 50%;
   right: 48px;
+  color: #2f80ed;
 }
 
 .feynman__main-illusrartion {
@@ -230,43 +227,26 @@ h1, h2 , h3, h4, p, {
 
 
 .section-title_theme_dark{
-  width: 60%;
   padding-top: 90px;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
   color: white;
   position: relative;
   z-index: 1;
 }
 
+
 .section-subtitle_theme_dark {
-  width: 60%;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
   color: white;
   position: relative;
   z-index: 1;
 }
 
 .table_theme_dark {
-  width: 1100px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
   margin: 0px auto 90px;
 }
 
+
 .table__cell_theme_dark {
   width: 200px;
-  color: white;
   margin-right: 0;
   margin-top: 80px;
   position: relative;
@@ -274,16 +254,11 @@ h1, h2 , h3, h4, p, {
 }
 
 .table__heading_theme_dark {
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: bold;
+  color: white;
 }
 
 .table__text_theme_dark {
-  margin-top: 20px;
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
+  color: white;
 }
 
 .kaufman__triangle {
@@ -292,6 +267,8 @@ h1, h2 , h3, h4, p, {
   position: absolute;
   top: 0;
   right: -210px;
+  background-image: url('../images/kaufman-triangle.svg');
+  background-size: contain;
 }
 
 .footer {
@@ -301,7 +278,7 @@ h1, h2 , h3, h4, p, {
   justify-content: center;
 }
 
-.footer__column {
+.footer__columns {
   display: flex;
   width: 90%;
   padding-top: 60px;
@@ -309,15 +286,26 @@ h1, h2 , h3, h4, p, {
   justify-content: space-between;
 }
 
-.footer__column_copyright {
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.footer__column_content_copyright {
   flex-basis: 711px;
-  position: relative;
+  justify-content: space-between;
+}
+
+.footer__column_content_info {
+}
+
+.footer__column_content_social {
 }
 
 .logo_place_footer {
   width: 183px;
   height: 35px;
-
 }
 
 .footer__author {
@@ -325,21 +313,7 @@ h1, h2 , h3, h4, p, {
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  position: absolute;
-  bottom: 18px;
-  padding-top: 18px;
-}
-
-.footer__column_info {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.footer__column_social {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  padding: 18px 0;
 }
 
 .footer__column-heading {
@@ -356,8 +330,6 @@ h1, h2 , h3, h4, p, {
   flex-direction: column;
 }
 
-
-
 .footer__column-link {
   color: white;
   text-decoration: none;
@@ -366,32 +338,10 @@ h1, h2 , h3, h4, p, {
   font-weight: normal;
 }
 
-.footer__column-link_icon-fb::before {
-  content: "";
-  background-image: url('../images/facebook_color_white.svg');
+.footer__social-icon {
   height: 16px;
   width: 16px;
-  display: inline-block;
-  vertical-align: middle;
   margin-right: 10px;
 }
 
-.footer__column-link_icon-vk::before {
-  content: "";
-  background-image: url('../images/vk_color_white.svg');
-  height: 16px;
-  width: 16px;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 10px;
-}
 
-.footer__column-link_icon-in::before {
-  content: "";
-  background-image: url('../images/instagram_color_white.svg');
-  height: 16px;
-  width: 16px;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 10px;
-}

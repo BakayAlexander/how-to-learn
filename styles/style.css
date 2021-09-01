@@ -1,14 +1,3 @@
-/* Большое спасибо вам за ревью!)
- Многие вещи встали в моей голове на место. *high-five* */
-
- /* Вместо того чтобы обнулять отступы через общий селектор или через назначение
- отступов классам, я опытным путем вывел что обнулить отступы необходимо у заголовков h4.
- Но разобраться почему именно у них я, к сожалению, не смог. В чате проекта я вопрос задал, но ответа так же не дождался.*/
-
-a:hover {
-  color: rgb(255, 187, 86);
-}
-
 .page {
   min-width: 1100px;
   max-width: 1600px;
@@ -35,17 +24,20 @@ a:hover {
 }
 
 .header__title {
+  margin: 0 0 0 64px;
+  padding: 0;
   width: 730px;
   font-size: 102px;
   line-height: 96px;
   font-weight: bold;
   display: flex;
   align-items: center;
-  margin-left: 64px;
   z-index: 2;
 }
 
 .header__subtitle {
+  margin: 0;
+  padding: 0;
   width: 388px;
   font-size: 18px;
   line-height: 25px;
@@ -93,6 +85,7 @@ a:hover {
 }
 
 .two-columns__brief {
+  margin: 0;
   width: 175px;
   line-height: 1.2;
   font-size: 18px;
@@ -115,7 +108,7 @@ a:hover {
 }
 
 .two-columns__paragraph {
-  margin-bottom: 30px;
+  margin: 0 0 30px 0;
 }
 
 .two-columns__paragraph:nth-of-type(3n) {
@@ -128,6 +121,7 @@ a:hover {
 }
 
 .section-title {
+  margin: 0;
   width: 60%;
   line-height: 1.15;
   font-size: 60px;
@@ -143,7 +137,7 @@ a:hover {
   font-weight: normal;
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin: 20px 0 0 0;
 }
 
 .table {
@@ -153,12 +147,13 @@ a:hover {
   justify-content: space-between;
   align-items: flex-start;
   margin: 0 auto 100px;
+  padding: 0;
   list-style: none;
 }
 
 .table__cell {
   width: 250px;
-  margin-top: 60px;
+  margin: 60px 0 0 0;
 }
 
 .table__heading {
@@ -193,7 +188,7 @@ a:hover {
   position: relative;
   z-index: 1;
   margin: auto;
-  padding-top: 100px;
+  padding: 100px 0 0 0;
 }
 
 .feynman__subtitle {
@@ -203,7 +198,7 @@ a:hover {
   text-align: center;
   position: relative;
   z-index: 1;
-  margin-top: 60px;
+  margin: 70px 0 0 0;
 }
 
 .feynman__link {
@@ -257,8 +252,7 @@ a:hover {
 
 .table__cell_theme_dark {
   width: 200px;
-  margin-right: 0;
-  margin-top: 80px;
+  margin: 80px 0 0 0;
   position: relative;
   z-index: 1;
 }
@@ -324,6 +318,7 @@ a:hover {
   font-size: 18px;
   font-weight: normal;
   padding: 18px 0;
+  margin: 0;
 }
 
 .footer__column-heading {

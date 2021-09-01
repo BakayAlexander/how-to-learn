@@ -1,7 +1,12 @@
+/* Большое спасибо вам за ревью!)
+ Многие вещи встали в моей голове на место. *high-five* */
 
-h1, h2 , h3, h4, p, ul {
-  margin: 0;
-  padding: 0;
+ /* Вместо того чтобы обнулять отступы через общий селектор или через назначение
+ отступов классам, я опытным путем вывел что обнулить отступы необходимо у заголовков h4.
+ Но разобраться почему именно у них я, к сожалению, не смог. В чате проекта я вопрос задал, но ответа так же не дождался.*/
+
+a:hover {
+  color: rgb(255, 187, 86);
 }
 
 .page {
@@ -157,12 +162,16 @@ h1, h2 , h3, h4, p, ul {
 }
 
 .table__heading {
+  margin: 0;
+  padding: 0;
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
 }
 
 .table__text {
+  margin: 0;
+  padding: 0;
   margin-top: 20px;
   line-height: 1.2;
   font-size: 18px;
@@ -206,6 +215,7 @@ h1, h2 , h3, h4, p, ul {
   top: 50%;
   right: 48px;
   color: #2f80ed;
+  z-index: 2;
 }
 
 .feynman__main-illusrartion {
@@ -317,6 +327,8 @@ h1, h2 , h3, h4, p, ul {
 }
 
 .footer__column-heading {
+  margin: 0;
+  padding: 0;
   color: white;
   line-height: 30px;
   font-size: 18px;
@@ -331,6 +343,8 @@ h1, h2 , h3, h4, p, ul {
 }
 
 .footer__column-link {
+  margin: 0;
+  padding: 0;
   color: white;
   text-decoration: none;
   line-height: 30px;

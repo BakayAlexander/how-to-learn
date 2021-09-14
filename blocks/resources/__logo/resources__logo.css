@@ -6,6 +6,6 @@
   transition: 0.3s linear;
 }
 
-.resources__logo:hover{
+.resources__logo:hover {
   opacity: 30%;
 }
